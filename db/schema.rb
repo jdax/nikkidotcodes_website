@@ -11,9 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150926170351) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "codes", force: :cascade do |t|
+    t.string   "project_name"
+    t.string   "girhub_url"
+    t.text     "description"
+    t.string   "cool_point1"
+    t.string   "cool_point2"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "speakings", force: :cascade do |t|
+    t.string   "talk_name"
+    t.string   "conference"
+    t.string   "conference_url"
+    t.string   "slides_url"
+    t.string   "video_url"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "writings", force: :cascade do |t|
+    t.string   "article_title"
+    t.string   "description"
+    t.string   "publication"
+    t.string   "article_url"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end

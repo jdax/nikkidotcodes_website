@@ -26,8 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # github api wrapper
 gem 'octokit'
 
-# adding dotenv so I don't have to expose all of my passwords to github users
-gem 'dotenv-rails'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -50,5 +49,8 @@ group :development, :test do
 
   gem 'rspec-core'
   gem 'rspec-rails'
+
+  # adding dotenv so I don't have to expose all of my passwords to github users
+  gem 'dotenv-rails'
 end
 

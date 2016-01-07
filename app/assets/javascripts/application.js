@@ -13,4 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require slicknav
+//= require show_nav
 //= require_tree .

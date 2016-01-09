@@ -1,10 +1,10 @@
 <div class="left-nav">
 
   <div class="header-image">
-    <img src="/images/commish_nikki.png" alt="Portrait By Kiva Bay">
+    <img src="/images/commish_nikki.png" alt="Image ">
   </div>
   <div class="header-text">
-    <h1>Nikki Murray</h1> <p>Book reviews, coding thoughts, feminist rants, and occasional cats.</p>
+    <h1>Nikki Murray</h1> <p>Software engineer: writing about, speaking about, and ranting about code.</p>
     <div class="article--text">
       <a href="http://www.twitter.com/nikkilizmurray" target="_blank"><i class="fa fa-twitter">  </i></a>
       <a href="http://www.github.com/jdax" target="_blank"><i class="fa fa-github"></i></a>
@@ -15,13 +15,13 @@
 
   <div class="left-nav-links">
     <ul>
-      <li>>Code</li>
-      <li>Speaking</li>
-      <li>Writing</li>
-      <li>Curriculum Vitae</li>
+      <li><%= link_to "Code", codes_path%></li>
+      <li><%= link_to "Speaking", speakings_path%></li>
+      <li><%= link_to "Writing", writings_path %></li>
+      <li><%= link_to "Curriculum Vitae", about_me_index_path %></li>
     </ul>
   </div>
 
 
-  <%= partial "footer" %>
+  <%= render "layouts/footer" %>
 </div>

@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="main" role="main">
+  <%= render "layouts/navbar" %>
+  <div class="mobile-nav">
+    <%= render "layouts/mobile_nav" %>
+  </div>
+  <%= render "layouts/mobile_links" %>
 
-<%= yield %>
+  <div>
+    <%= yield %>
+  </div>
+
+
+</div>
+
 
 </body>
 </html>

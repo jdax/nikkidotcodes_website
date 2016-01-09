@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  root 'about_me#index'
 
   resources :codes, only: [:index, :show]
-  resources :speaking, only: [:index, :show]
+  resources :speakings, only: [:index, :show]
   resources :writings, only: [:index, :show]
+  resources :about_me, only: :index
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

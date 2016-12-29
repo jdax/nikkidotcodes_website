@@ -1,9 +1,12 @@
+<div class="mobile-nav">
 <nav id="primary_nav">
 <ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/about_me">About Me</a></li>
-  <li><a href="/books">Books</a></li>
-  <li><a href="/coding">Coding</a></li>
-  <li><a href="/feminism">Feminism</a></li>
+  <ul>
+    <li><%= link_to "Code", codes_path%></li>
+    <li><%= link_to "Speaking", speakings_path%></li>
+    <li><%= link_to "Writing", writings_path %></li>
+    <li><%= link_to "Curriculum Vitae", about_me_index_path %></li>
+  </ul>
 </ul>
 </nav>
+</div>

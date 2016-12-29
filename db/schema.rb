@@ -11,19 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160109203344) do
+ActiveRecord::Schema.define(version: 20161229191416) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "codes", force: :cascade do |t|
     t.string   "project_name"
-    t.string   "girhub_url"
     t.text     "description"
     t.string   "cool_point1"
     t.string   "cool_point2"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.string   "url"
+    t.string   "github_url"
   end
 
   create_table "duties", force: :cascade do |t|

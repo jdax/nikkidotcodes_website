@@ -6,6 +6,13 @@ $gray:                   #AB9FAC; // #555
 $gray-light:             #BEB6BB; // #777
 $gray-lighter:           #B9C8CD; // #eee
 
+* {
+  font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Serif', serif;
+}
+
 
 /*
    Desktop
@@ -97,8 +104,10 @@ $gray-lighter:           #B9C8CD; // #eee
     color: $gray;
   }
 
-  /* main */
+  /* main
+  -----------------*/
 
+  /* currently poorly named means of getting the main body of the page to not be hidden behind the left nav */
   .blog-body {
     float: left;
     display: inline-block;
@@ -106,6 +115,146 @@ $gray-lighter:           #B9C8CD; // #eee
     width: 70%;
     padding: 2.5%;
   }
+
+  /*  CV stuff
+  -----------------*/
+
+
+  .category-head {
+    display: inline-block;
+    float: right;
+    color: $gray-base;
+    margin-bottom: 2.5%;
+    font-family: 'PT Serif', serif;
+    font-size: large;
+  }
+
+  .date {
+    color: $gray;
+  }
+  /* SKILLS */
+
+  .skills {
+    box-shadow: 0px 2px $gray-darker;
+    border-radius: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+  .skill-set {
+       display: inline-block;
+  }
+
+  .skill--wrapper {
+    margin: 2.5%;
+  }
+
+  .skill-specific {
+    display: inline;
+    width: 25%;
+    color: $gray-dark;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+  }
+
+  .skills-list {
+    width: 55%;
+    float: right;
+    display: block;
+    color: $gray-darker;
+  }
+
+  /* Experience  AKA jobs / positions */
+
+  .experience {
+    box-shadow: 0px 2px $gray-darker;
+    border-radius: 0.25%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+  }
+
+  .job {
+    width: 95%;
+    padding: 2.5%;
+    display: inline-block;
+
+  }
+
+  .job--head {
+    width: 25%;
+    float: left;
+    box-shadow: 2px 0px $gray-dark;
+    padding-right: 5%;
+    text-align: left;
+  }
+
+  .job--title {
+    font-family: 'PT Serif', serif;
+    font-size: medium;
+    color: $gray-dark
+  }
+
+  .job--company {
+    font-size: large;
+    color: $gray-base;
+
+  }
+
+  .job--description {
+    width: 50%;
+    margin-left: 10%;
+    display: inline-block;
+  }
+
+  .job--item {
+    color: $gray-darker;
+  }
+
+  /*  Education  */
+
+  .education {
+    box-shadow: 0px 2px $gray-darker;
+    border-radius: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+    overflow: hidden;
+  }
+
+  .education--wrapper {
+    width: 27%;
+    margin-left: 2.5%;
+    display: inline-block;
+    float: left;
+    background: $gray;
+    box-shadow: 2px 0px $gray-dark;
+  }
+  .education--school {
+    font-size: large;
+    color: $gray-base;
+  }
+  .education--course {
+    font-family: 'PT Serif', serif;
+    font-size: medium;
+    color: $gray-dark;
+  }
+  .education--gpa {}
+
+  /* volunteer */
+
+  .volunteer {
+    box-shadow: 0px 2px $gray-darker;
+    border-radius: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    margin-bottom: 5%;
+
+  }
+
+
+
+  /* blog-like stuff */
 
   .article {
     box-shadow: 0px 2px $gray-darker;
@@ -135,6 +284,144 @@ $gray-lighter:           #B9C8CD; // #eee
   .slicknav_menu {
     display:none;
   }
+  .mobile_links {
+    display:none;
+  }
 
+}
+
+@media only screen and (max-width: 880px) {
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: $gray-lighter;
+  }
+
+  p {
+    color: $gray-dark;
+  }
+
+  a {
+    text-decoration: none;
+    color: $gray-dark;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $gray;
+  }
+
+  /* mobile navigation */
+
+  .js #primary_nav {
+    display: none;
+  }
+
+  #primary_nav {
+    display: none;
+  }
+
+  .js .slicknav_menu {
+    display: block;
+  }
+
+  /* left nav */
+
+  .left-nav {
+    display: none;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .header-text {
+    display: none;
+  }
+
+  .header-text p {
+    display: none;
+  }
+
+  .header-image img {
+    display: none;
+  }
+  .left-nav-links {
+  }
+
+  .left-nav-links ul {
+    list-style-type: none;
+    font-size: 2em;
+  }
+
+  .mobile_links {
+    position: relative;
+    padding: 5%;
+    display: inline-block;
+    float: left;
+  }
+
+  .mobile_links a {
+    padding-top: 5%;
+    padding-left: 2.5%;
+    display: block;
+  }
+
+  .mobile_img {
+    max-width: 100%;
+
+  }
+  .mobile_img img {
+    max-width: 55%;
+    max-height: 55%;
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding-right: 5%;
+
+  }
+
+  /* footer */
+  .copyright {
+    font-size: 1em;
+    margin-left: 12.5%;
+    position: absolute;
+    bottom: 2%;
+  }
+
+  .copyright p {
+    color: $gray;
+  }
+
+  /* main */
+
+  .blog-body {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    padding: 2.5%;
+  }
+
+  .article {
+    box-shadow: 0px 2px $gray-darker;
+    border-radius: 2%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+  }
+
+  .article--title a, h1 {
+    font-family: 'PT Serif', serif;
+
+  }
+
+  .article--date {
+    color: $gray-dark;
+    font-size: 1.5em;
+  }
+
+  .article--text {
+    font-size: 1.75em;
+    padding: 1%;
+  }
 
 }

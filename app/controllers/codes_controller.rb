@@ -4,8 +4,4 @@ class CodesController < ApplicationController
     @codes = Code.all
   end
 
-  def show
-    @code = Code.find(params[:id])
-  end
-
 end

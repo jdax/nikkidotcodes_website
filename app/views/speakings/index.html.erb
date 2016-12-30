@@ -1,0 +1,18 @@
+<div class="blog-body">
+  <% @speakings.each do |speaking| %>
+
+      <div class="job">
+        <div class="job--head">
+          <div class="job--company"><%= speaking.talk_name %></div>
+        </div>
+        <div class="job--description">
+          <ul>
+            <li class="job--item"><%= speaking.conference %></li>
+            <% if speaking.conference_url? %><li class="job--item"><%= link_to "Conference Website", speaking.conference_url %></li><% end %>
+            <% if speaking.slides_url? %><li class="job--item"><%= link_to "See the slides", speaking.slides_url %></li><% end %>
+            <% if speaking.video_url? %><li class="job--item"><%= link_to "See the video", speaking.video_url %></li><% end %>
+          </ul>
+        </div>
+      </div>
+  <% end %>
+</div>

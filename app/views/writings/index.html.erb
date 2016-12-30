@@ -1,4 +1,17 @@
 <div class="blog-body">
+  <% @writings.each do |writing| %>
 
-
+      <div class="job">
+        <div class="job--head">
+          <div class="job--company"><%= writing.article_title %></div>
+        </div>
+        <div class="job--description">
+          <ul>
+            <li class="job--item"><%= writing.publication %></li>
+            <li class="job--item"><%= writing.description %></li>
+            <% if writing.article_url? %><li class="job--item"><%= link_to "Read it", writing.article_url %></li><% end %>
+          </ul>
+        </div>
+      </div>
+  <% end %>
 </div>

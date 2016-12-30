@@ -1,0 +1,19 @@
+<div class="blog-body">
+  <% @codes.each do |code| %>
+
+      <div class="job">
+        <div class="job--head">
+          <div class="job--company"><%= code.project_name %></div>
+        </div>
+        <div class="job--description">
+          <ul>
+            <li class="job--item"><%= code.description %></li>
+            <li class="job--item"><%= code.cool_point1 %></li>
+            <li class="job--item"><%= code.cool_point2 %></li>
+            <% if code.url? %><li class="job--item"><%= link_to "Preview", code.url %></li><% end %>
+            <% if code.github_url? %><li class="job--item"><%= link_to "See the code", code.github_url %></li><% end %>
+          </ul>
+        </div>
+      </div>
+  <% end %>
+</div>

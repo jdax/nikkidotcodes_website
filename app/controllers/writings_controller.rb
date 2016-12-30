@@ -4,8 +4,4 @@ class WritingsController < ApplicationController
     @writings = Writing.all
   end
 
-  def show
-    @writing = Writing.find(params[:id])
-  end
-
 end

@@ -93,7 +93,7 @@ $gray-lighter:           #B9C8CD; // #eee
   .slicknav_menu * {
     box-sizing: border-box; }
   .slicknav_menu .slicknav_menutxt {
-    color: #fff;
+    color: $gray-darker;
     font-weight: bold;
     text-shadow: 0 1px 3px $gray-light; }
   .slicknav_menu .slicknav_icon-bar {

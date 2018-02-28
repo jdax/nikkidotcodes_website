@@ -13,6 +13,7 @@ Writing.create(:article_title => "TODO Group and the Open Source Code of Conduct
 # Writing.create(:article_title => "", :description => "", :publication => "", :article_url => "")
 
 # Speakings
+Speaking.create(:talk_name => "The Strange History of the Internet", :conference => "Ada Conf", :conference_url => "https://adaconf.org/tour-of-the-internet/", :slides_url => "", :video_url => "https://www.youtube.com/watch?v=O6t6HHOjNzM")
 Speaking.create(:talk_name => "Programmer Legitimacy", :conference => "Lesbians Who Tech Berlin Summit", :conference_url => "http://lesbianswhotech.org/berlinsummit/", :slides_url => "http://www.slideshare.net/NicoleMurray8/legitimacy-is-infinite?qid=817580a1-c5e0-4b03-a9f6-5b25c3398536&v=&b=&from_search=1", :video_url => "")
 Speaking.create(:talk_name => "Going Your Own Way: When To Make A Gem", :conference => "RubyConf 2016", :conference_url => "", :slides_url => "", :video_url => "http://confreaks.tv/videos/rubyconf2015-making-it-on-your-own-and-the-pitfalls-of-gem-dependencies")
 Speaking.create(:talk_name => "Data Visualization with Chartkick", :conference => "B'more On Rails Meet Up", :conference_url => "https://www.meetup.com/bmore-on-rails/events/220444035/?a=uc1_vm&read=1&_af=event&_af_eid=220444035&https=on", :slides_url => "http://www.slideshare.net/NicoleMurray8/dynamic-data-visualization-with-chartkick", :video_url => "")

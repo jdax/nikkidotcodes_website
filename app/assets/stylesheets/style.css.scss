@@ -130,17 +130,17 @@ $hover_text: $gray-light;
   }
   i {
     background-color: $main_background;
-    border-radius: 2em;
+    border-radius: 1.5em;
     color: $main_text;
     display: inline-block;
-    height: 2em;
+    height: 1.5em;
     line-height: 2em;
-    width: 2em;
+    width: 1.5em;
     text-align: center;
     text-decoration: none;
   }
   .fa-twitter {
-    margin-left: 1em;
+    margin-left: 0.5em;
   }
   i:hover {
     @include transition;
@@ -163,10 +163,10 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   @include social_share_rounded;
   i {
-    font-size: 1em;
+    font-size: 0.80em;
   }
   .fa-twitter {
-    margin-left: 1em;
+    margin-left: 0.8em;
   }
   @include bp-medium($size-medium) {
     padding-bottom: 10%;
@@ -263,14 +263,14 @@ h1, h2, h3, h4, h5, h6 {
   .left-nav-links ul {
     list-style-type: none;
     padding-top: 2.5%;
-    font-size: 2em;
+    font-size: 1.25em;
     padding-left: 12.5%
 
   }
 
   /* footer */
   .copyright {
-    font-size: 1em;
+    font-size: 0.5em;
     margin-left: 12.5%;
     position: absolute;
     bottom: 2%;

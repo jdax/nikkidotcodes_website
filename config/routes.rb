@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   resources :codes, only: [:index, :show]
   resources :speakings, only: [:index, :show]
   resources :writings, only: [:index, :show]
-  resources :about_me, only: :index
+  resources :about_me, :except => [:new, :edit, :show, :delete, :destroy]
+
+  get '/hire-me' => "about_me#hire_me"
+  get "about_me/download_resume_pdf"
+
 
   get '/googled2345548c400f224.html', :to => redirect('/googled2345548c400f224.htmll')
   # The priority is based upon order of creation: first created -> highest priority.

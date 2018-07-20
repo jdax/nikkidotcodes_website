@@ -198,15 +198,12 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
-/*
-   Desktop
-------------------*/
-
-
-@media only screen and (min-width: 880px) {
   * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    @media only screen and (max-width: 88px) {
+      background-color: white;
+    }
   }
 
   p {
@@ -222,216 +219,145 @@ h1, h2, h3, h4, h5, h6 {
     color: $gray-light;
   }
 
-
   header {
     display: none;
   }
-  /* left nav */
 
-  .left-nav {
-    width: 20%;
-    height: 100%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: $gray-base;
-    float: left;
-    display: inline-block;
-    position: fixed;
-    z-index: -1;
+  /* mobile navigation */
+
+.js #primary_nav {
+  @media only screen and (max-width: 880px) {
+    display: none;
   }
+}
 
-  .header-image {
-    max-width: 75%;
-    width: auto;
-    height: auto;
-    margin-left: 12.5%;
-    overflow:hidden;
-    display: inline-block;
+#primary_nav {
+  @media only screen and (max-width: 880px) {
+    display: none;
   }
+}
 
-  .header-text {
-    margin-left: 12.5%;
+.js .slicknav_menu {
+  @media only screen and (max-width: 880px) {
+    display: none;
   }
+}
 
-  .header-text p {
-    color: $gray;
+/* left nav */
+
+.left-nav {
+  width: 20%;
+  height: 100%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  background-color: $gray-base;
+  float: left;
+  display: inline-block;
+  position: fixed;
+  z-index: -1%;
+  @media only screen and (max-width: 880px) {
+    display: none;
   }
+}
 
-  .header-image img {
+.header-image {
+  max-width: 75%;
+  width: auto;
+  height: auto;
+  margin-left: 12.5%;
+  overflow:hidden;
+  display: inline-block;
+  @media only screen and (max-width: 880px) {
+    display: none;
+  }
+}
+
+.header-text {
+  margin-left: 12.5%;
+  p {
+  color: $gray;
+    @media only screen and (max-width: 880px) {
+      display: none;
+    }
+  }
+  img {
     padding-top: 7%;
     max-width:100%;
     max-height:100%;
     margin:auto;
     display:block;
-  }
-  .left-nav-links {
-
-  }
-
-  .left-nav-links ul {
-    list-style-type: none;
-    padding-top: 2.5%;
-    font-size: 1.25em;
-    padding-left: 12.5%
-
-  }
-
-  /* footer */
-  .copyright {
-    font-size: 0.5em;
-    margin-left: 12.5%;
-    position: absolute;
-    bottom: 2%;
-  }
-
-  .copyright p {
-    color: $gray;
-  }
-
-  /* main
-  -----------------*/
-
-  /* currently poorly named means of getting the main body of the page to not be hidden behind the left nav */
-  .blog-body {
-    float: left;
-    display: inline-block;
-    margin-left: 25%;
-    width: 70%;
-    padding: 2.5%;
-  }
-
-
-  .hire-me {
-    color: $gray-base;
-    font-size: 2.5em;
-  }
-  .hire-me-header {
-    background: $gray-darker;
-    color: $gray-lighter;
-    a {
-      color: $gray-light;
-      text-decoration: underline;
+    @media only screen and (max-width: 880px) {
+      display: none;
     }
   }
-
-
-  /* blog-like stuff */
-
-  .article {
-    box-shadow: 0px 2px $gray-darker;
-    border-radius: 2%;
-    padding-bottom: 1%;
-    padding-top: 2%;
-  }
-
-  .article--title a, h1 {
-    font-family: 'PT Serif', serif;
-
-  }
-
-  .article--date {
-    color: $gray-dark;
-    font-size: 1.5em;
-  }
-
-  .article--text {
-    font-size: 1.75em;
-    padding: 1%;
-  }
-
-  .mobile-nav {
+  @media only screen and (max-width: 880px) {
     display: none;
   }
-  .slicknav_menu {
-    display:none;
-  }
-  .mobile_links {
-    display:none;
-  }
+}
+
+.left-nav-links {
 
 }
 
-@media only screen and (max-width: 880px) {
-  * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    background-color: white;
-  }
-
-  p {
-    color: $gray-dark;
-  }
-
-  a {
-    text-decoration: none;
-    color: $gray-dark;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $gray;
-  }
-
-  /* mobile navigation */
-
-  .js #primary_nav {
-    display: none;
-  }
-
-  #primary_nav {
-    display: none;
-  }
-
-  .js .slicknav_menu {
-    display: block;
-  }
-
-  /* left nav */
-
-  .left-nav {
-    display: none;
-  }
-
-  .header-image {
-    display: none;
-  }
-
-  .header-text {
-    display: none;
-  }
-
-  .header-text p {
-    display: none;
-  }
-
-  .header-image img {
-    display: none;
-  }
-  .left-nav-links {
-  }
-
-  .left-nav-links ul {
+.left-nav-links ul {
+  list-style-type: none;
+  padding-top: 2.5%;
+  font-size: 1.25em;
+  padding-left: 12.5%;
+  @media only screen and (max-width: 880px) {
     list-style-type: none;
     font-size: 2em;
   }
+}
 
-  .mobile_links {
+.mobile-nav {
+  @media only screen and (min-width: 880px) {
+    display: none;
+  }
+}
+.slicknav_menu {
+  @media only screen and (min-width: 880px) {
+    display: none;
+  }
+}
+
+.mobile_links {
+  @media only screen and (min-width: 880px) {
+    display: none;
+  }
+  @media only screen and (max-width: 880px) {
     position: relative;
     padding: 5%;
     display: inline-block;
     float: left;
   }
+}
 
-  .mobile_links a {
+.mobile_links a {
+  @media only screen and (min-width: 880px) {
+    display: none;
+  }
+  @media only screen and (max-width: 880px) {
     padding-top: 5%;
     padding-left: 2.5%;
     display: block;
   }
+}
 
-  .mobile_img {
-    max-width: 100%;
-
+.mobile_img {
+  @media only screen and (min-width: 880px) {
+    display: none;
   }
-  .mobile_img img {
+  @media only screen and (max-width: 880px) {
+    max-width: 100%;
+  }
+}
+
+.mobile_img img {
+  @media only screen and (min-width: 880px) {
+    display: none;
+  }
+  @media only screen and (max-width: 880px) {
     max-width: 55%;
     max-height: 55%;
     width: 50%;
@@ -439,69 +365,79 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     float: left;
     padding-right: 5%;
-
   }
+}
 
-  /* footer */
-  .copyright {
-    font-size: 1em;
-    margin-left: 12.5%;
-    position: absolute;
-    bottom: 2%;
-  }
+/* footer */
+.copyright {
+  font-size: 0.5em;
+  margin-left: 12.5%;
+  position: absolute;
+  bottom: 2%;
+}
 
-  .copyright p {
-    color: $gray;
-  }
+.copyright p {
+  color: $gray;
+}
 
-  /* main */
+/* main
+-----------------*/
 
-  .blog-body {
-    float: left;
-    display: inline-block;
+/* currently poorly named means of getting the main body of the page to not be hidden behind the left nav */
+.blog-body {
+  float: left;
+  display: inline-block;
+  margin-left: 25%;
+  width: 70%;
+  padding: 2.5%;
+  @media only screen and (max-width: 880px) {
     width: 100%;
-    padding: 2.5%;
+    margin-left: 0;
   }
+}
 
-  .article {
-    box-shadow: 0px 2px $gray-darker;
-    border-radius: 2%;
-    padding-bottom: 1%;
-    padding-top: 2%;
+.hire-me {
+  color: $gray-base;
+  font-size: 2.5em;
+}
+.hire-me-header {
+  background: $gray-darker;
+  color: $gray-lighter;
+  a {
+    color: $gray-light;
+    text-decoration: underline;
   }
+}
 
-  .article--title a, h1 {
-    font-family: 'PT Serif', serif;
 
-  }
+/* blog-like stuff */
 
-  .article--date {
-    color: $gray-dark;
-    font-size: 1.5em;
-  }
+.article {
+  box-shadow: 0px 2px $gray-darker;
+  border-radius: 2%;
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
 
-  .article--text {
-    font-size: 1.75em;
-    padding: 1%;
-  }
+.article--title a, h1 {
+  font-family: 'PT Serif', serif;
 
-  .hire-me {
-    color: $gray-base;
-    font-size: 1.5em;
-  }
-  .hire-me-header {
-    background: $gray-darker;
-    color: $gray-lighter;
-    a {
-      color: $gray-light;
-      text-decoration: underline;
-    }
-  }
+}
 
+.article--date {
+  color: $gray-dark;
+  font-size: 1.5em;
+}
+
+.article--text {
+  font-size: 1.75em;
+  padding: 1%;
 }
 
 .profile-pic {
   border-radius: 50%;
+  max-width: 70%;
+  margin-top: 5%;
 }
 
 /*  CV stuff
